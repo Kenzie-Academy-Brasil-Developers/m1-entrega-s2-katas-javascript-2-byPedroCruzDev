@@ -28,6 +28,7 @@ function power (n1, n2 ){
 
     for(let i = 0; i < n2; i++){
         power1 = multiply(n1,power1)
+        
         //a cada loop do n1 recebe 1(power1)
     }
     return power1
@@ -43,6 +44,7 @@ function factorial(n1){
     let fac = 1;
     for(let i = 1; i <= n1; i++){
         fac = multiply(fac, i)
+        
     }
     return fac
 }
@@ -66,9 +68,11 @@ function fibonacci (n) {
     let num = n;
 
     for(let i = 2; i <= n; i++){
+      
        num = add(fibN1, fibP2)
        fibP2 = fibN1
-       fibN1 = num
+       fibN1 = num  
+       console.log('AA'+ fibP2)
     }
     return num
 }  
